@@ -1,0 +1,171 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Kalnia', serif;
+    line-height: 1.5;
+    background: #D3CCE3;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #E9E4F0, #D3CCE3);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #E9E4F0, #D3CCE3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+h1{
+    text-align: center;
+    font-size: 70px;
+    font-weight: 900;
+    margin: 30px;
+}
+
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+    overflow: hidden;
+}
+
+#search{
+     font-size: 20px;
+    padding: 20px;
+    width: 20%;
+    border-radius: 9px;
+    border: none;
+    box-shadow: 2px 3px 8px #464444 ;
+}
+
+#button{
+    font-size: 20px;
+    font-weight: 600;
+    padding: 20px;
+    width: 10%;
+    margin: 14px;
+    border-radius: 13px;
+    border: none; 
+    background-color: #9f9c9c;
+    box-shadow: 4px 3px 5px #2e2d2d ;
+    cursor: pointer;
+}
+
+#button:hover{
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+.results{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    align-items: center; 
+}
+
+.result{
+    margin: 5px;
+    width: 30%;
+    height: 100%;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 4px 3px 8px #615e5e ;
+    text-align: center;
+   
+}
+
+.result a{
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 900;
+    color: #2e2d2d;
+    display: block;
+    padding: 10px;
+    text-transform: capitalize;
+    
+}
+img{
+height: 200px;
+width: 100%;
+object-fit: cover;
+transition: opacity 0.2s ease-in-out ;
+}
+
+.result:hover img{
+   opacity: 0.83;
+}
+
+#show{
+    font-size: 20px;
+    font-weight: 600;
+    padding: 10px 20px;
+    width: 10%;
+    display: block;
+    margin: 34px auto;
+    border-radius: 13px;
+    border: none; 
+    background-color: black;
+    color: white;
+    box-shadow: 4px 3px 5px #2e2d2d ; 
+    text-align: center;
+    cursor: pointer;
+    display: none;
+}
+
+#show:hover{
+    background-color: rgb(95, 88, 88);
+    color: white;
+    cursor: pointer;
+}
+
+@media (max-width: 786px) {
+    .result{
+        width: 45%;
+        display: block;
+    }
+    #button{
+        font-size: 20px;
+        font-weight: 600;
+        padding: 10px;
+        width: 20%;
+    }
+
+    .results{
+        padding: 20px;
+    }
+
+}
+
+@media (max-width: 440px) {
+    .result{
+        width: 100%;
+        display: block;
+        margin: 4px;
+    }
+
+    form{
+        width: 100%;
+    }
+
+    #button{
+        font-size: 15px;
+        font-weight: 400;
+        padding: 20px;
+        width: 100%;
+       
+    }
+    .results{
+        padding: 20px;
+    }
+
+}
+
+@media (max-width: 1030px) {
+   
+    #button{
+        font-size: 20px;
+        font-weight: 500;
+        padding: 20px;
+        width: 20%;
+    }
+
+}
